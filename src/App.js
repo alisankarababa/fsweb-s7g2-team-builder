@@ -12,21 +12,21 @@ const initialTeamList = [
         "first-name": "name0",
         "last-name": "lastname0",
         email: "name0lastname0@email.com",
-        position: "backend-engineer"
+        position: "Backend Engineer"
     },
     {
         id: 1,
         "first-name": "name1",
         "last-name": "lastname1",
         email: "name1lastname1@email.com",
-        position: "frontend-engineer"
+        position: "Frontend Engineer"
     },
     {
         id: 2,
         "first-name": "name2",
         "last-name": "lastname2",
         email: "name2lastname2@email.com",
-        position: "designer"
+        position: "Design Engineer"
     }
 ];
 

@@ -105,23 +105,22 @@ function SignUpForm(props) {
                 </Col>
                 <Col sm={10}>
                     <FormGroup sm={10} id="position">
-                        <Input className="me-5" onChange={hChange} type="radio" id="backend-engineer" name="position" value="backend-engineer" checked={formData["position"] === "backend-engineer"}/>
+                        <Input className="me-5" onChange={hChange} type="radio" id="backend-engineer" name="position" value="Backend Engineer" checked={formData["position"] === "Backend Engineer"}/>
                         <Label htmlFor="backend-engineer">Backend Engineer</Label><br/>
-                        <Input className="me-5" onChange={hChange} type="radio" id="frontend-engineer" name="position" value="frontend-engineer" checked={formData["position"] === "frontend-engineer"}/>
+                        <Input className="me-5" onChange={hChange} type="radio" id="frontend-engineer" name="position" value="Frontend Engineer" checked={formData["position"] === "Frontend Engineer"}/>
                         <Label htmlFor="frontend-engineer">Frontend Engineer</Label><br/>
-                        <Input className="me-5" onChange={hChange} type="radio" id="designer" name="position" value="designer" checked={formData["position"] === "designer"}/>
-                        <Label htmlFor="designer">Designer</Label><br/>
+                        <Input className="me-5" onChange={hChange} type="radio" id="designer" name="position" value="Design Engineer" checked={formData["position"] === "Design Engineer"}/>
+                        <Label htmlFor="designer">Design Engineer</Label><br/>
                     </FormGroup>
                 </Col>
             </FormGroup>
   
             <FormGroup row>
-                <Col sm={{ offset: 2, size: 2}}>
-                    <input className="btn btn-success" type="submit" value="Submit"/>
-                </Col>
-                <Col sm={{ size: 3}}>
-                {/* onClick={() => hMemberToBeEdited(null)} */}
-                    <Link to="/"><button  type="button" className="btn btn-primary">Home Page</button></Link>
+                <Col sm={{ offset: 2, size: 10}}>
+                    <div className="d-grid gap-1 col-12">
+                        <input className="btn btn-success" type="submit" value="Submit"/>
+                        <button onClick={() => history.push("/")}type="button" className="btn btn-primary">Home Page</button>
+                    </div>
                 </Col>
             </FormGroup>
         </Form>
