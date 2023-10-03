@@ -1,5 +1,4 @@
 import TeamMember from "../components/TeamMember"
-import { useEffect } from "react";
 
 function HomePage(props) {
     const {teamList, hMemberToBeEdited} = props;

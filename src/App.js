@@ -6,12 +6,34 @@ import { Route } from "react-router-dom";
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
-const initialTeamList = [];
+const initialTeamList = [
+    {
+        id: 0,
+        "first-name": "name0",
+        "last-name": "lastname0",
+        email: "name0lastname0@email.com",
+        position: "backend-engineer"
+    },
+    {
+        id: 1,
+        "first-name": "name1",
+        "last-name": "lastname1",
+        email: "name1lastname1@email.com",
+        position: "frontend-engineer"
+    },
+    {
+        id: 2,
+        "first-name": "name2",
+        "last-name": "lastname2",
+        email: "name2lastname2@email.com",
+        position: "designer"
+    }
+];
 
 function App() {
     const [teamList, setTeamList] = useState(initialTeamList);
     const [memberToBeEdited, setMemberToBeEdited] = useState(null);
-    const [nextId, setNextId] = useState(0);
+    const [nextId, setNextId] = useState(3);
     const history = useHistory();
 
     function hTeamList(member) {
