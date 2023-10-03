@@ -14,7 +14,7 @@ const initialFormData = {
 function SignUpForm(props) {
 
     const [formData, setFormData] = useState(initialFormData);
-    const {memberToBeEdited, hMemberToBeEdited, hEditMember, hTeamList} = props;
+    const {memberToBeEdited, hEditMember, hTeamList} = props;
     const history = useHistory();
 
     function hChange(event) {
@@ -120,7 +120,8 @@ function SignUpForm(props) {
                     <input className="btn btn-success" type="submit" value="Submit"/>
                 </Col>
                 <Col sm={{ size: 3}}>
-                    <Link to="/"><button onClick={() => hMemberToBeEdited(null)} type="button" className="btn btn-primary">Home Page</button></Link>
+                {/* onClick={() => hMemberToBeEdited(null)} */}
+                    <Link to="/"><button  type="button" className="btn btn-primary">Home Page</button></Link>
                 </Col>
             </FormGroup>
         </Form>

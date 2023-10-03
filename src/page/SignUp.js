@@ -2,9 +2,9 @@
 import SignUpForm from "../components/SignUpForm"
 
 function SignUp(props) {
-    const {memberToBeEdited, hMemberToBeEdited, hEditMember, hTeamList} = props;
+    const {memberToBeEdited, hEditMember, hTeamList} = props;
     return (
-        <SignUpForm memberToBeEdited={memberToBeEdited} hMemberToBeEdited={hMemberToBeEdited} hEditMember={hEditMember} hTeamList={hTeamList}/>
+        <SignUpForm memberToBeEdited={memberToBeEdited} hEditMember={hEditMember} hTeamList={hTeamList}/>
     )
 }
 
